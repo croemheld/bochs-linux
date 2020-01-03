@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# .conf.debug
+#
+
+./configure --enable-all-optimizations \
+            --enable-cpu-level=6 \
+            --enable-x86-64 \
+            --enable-vmx=2 \
+            --enable-pci \
+            --enable-usb \
+            --enable-e1000 \
+            --enable-iodebug \
+            --enable-debugger \
+            --enable-debugger-gui \
+            --enable-x86-debugger \
+            --enable-protection-keys \
+            --enable-show-ips \
+            --with-all-libs \
+            ${CONFIGURE_ARGS}
